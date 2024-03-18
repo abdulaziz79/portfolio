@@ -40,7 +40,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 50px;
+            gap: 0px;
 
             @include mobile{
                flex-direction: column;
@@ -75,9 +75,10 @@
 
             @include mobile{
                 transform: none !important;
-                padding: 10px;
+                padding: 0 10px;
                 align-items: center;
                 text-align: center;
+                gap:10px
              }
 
             h2{
