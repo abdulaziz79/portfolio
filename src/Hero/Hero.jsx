@@ -1,6 +1,10 @@
 import React from 'react'
 import "./Hero.scss"
 import { motion } from 'framer-motion'
+import image from "../public/aziz.png"
+import image1 from "../public/scroll.png"
+
+
 
 const textVariants={
     initial:{
@@ -58,14 +62,14 @@ const Hero = () => {
                 <motion.button variants={textVariants} onClick={()=>scrollTo("Portfolio")} >Latest Work</motion.button>
                 <motion.button variants={textVariants} onClick={()=>scrollTo("Contact")}>Contact Me</motion.button>
             </motion.div>
-            <motion.img variants={textVariants} animate="scrollButton" src="/scroll.png" alt="" />
+            <motion.img variants={textVariants} animate="scrollButton" src={image1} alt="" />
         </motion.div>
         </div>
         <motion.div className="slidingText" variants={sliderVariants} initial="initial" animate="animate">
             Writer Content Creator Influencer
         </motion.div>
       <div className="imageContainer">
-        <img src='/aziz.png'  alt='' style={{width:"100%"}}/> 
+        <img src={image}  alt='' style={{width:"100%"}}/> 
       </div>
     </div>
   )
