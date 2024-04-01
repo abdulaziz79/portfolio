@@ -5,14 +5,14 @@ import image from "../public/people.webp"
 
 const variants={
   initial:{
-    y:500,
+    y:-300,
     opacity:0
   },
   animate:{
     y:0,
     opacity:1,
     transition:{
-      duration:1,
+      duration:0.5,
       staggerChildren:0.2
     }
 
@@ -22,6 +22,13 @@ const variants={
 const Services = () => {
   const ref=useRef()
   const inView= useInView(ref, {margin:"-100px"})
+
+  const scrollTo =((id)=>{
+    const element = document.getElementById(id)
+    if(element){
+      element.scrollIntoView({behavior:"smooth"})
+    }
+  })
   return (
     <motion.div className="services" variants={variants} initial="initial" ref={ref} whileInView="animate">
         <motion.div className="textContainer" variants={variants} >
@@ -43,24 +50,24 @@ const Services = () => {
         </motion.div>
         <motion.div className="listContainer" variants={variants} >
           <motion.div className="box" whileHover={{background:"lightgray" ,color:"black"}}>
-            <h2>Branding</h2>
-            <p>"Lorem ipsum dolor sit amet, aliqua. . Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-            <button>Go</button>
+            <h2>Crafting User Experiences</h2>
+            <p>"Translate ideas into intuitive and visually appealing web applications. This includes designing user flows, building user interfaces, and ensuring a seamless experience across all devices."</p>
+            <button onClick={()=> scrollTo("Contact")}>Go</button>
           </motion.div>
           <motion.div className="box" whileHover={{background:"lightgray" ,color:"black"}}>
-            <h2>Branding</h2>
-            <p>"Lorem ipsum dolor sit amet, aliqua. . Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-            <button>Go</button>
+            <h2>Building the Foundation</h2>
+            <p>" Develop the core structure of web applications, focusing on data management and server-side logic. This involves creating and managing databases, implementing APIs for data exchange, and ensuring application security."</p>
+            <button onClick={()=> scrollTo("Contact")} >Go</button>
           </motion.div>
           <motion.div className="box" whileHover={{background:"lightgray" ,color:"black"}}>
-            <h2>Branding</h2>
-            <p>"Lorem ipsum dolor sit amet, aliqua. . Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-            <button>Go</button>
+            <h2>Bringing it to Life</h2>
+            <p>"Transform web applications from static designs to interactive experiences. This encompasses integrating various functionalities, implementing real-time features, and utilizing third-party APIs to enhance user experience."</p>
+            <button onClick={()=> scrollTo("Contact")} >Go</button>
           </motion.div>
           <motion.div className="box" whileHover={{background:"lightgray" ,color:"black"}}>
-            <h2>Branding</h2>
-            <p>"Lorem ipsum dolor sit amet, aliqua. . Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-            <button>Go</button>
+            <h2>Launching & Maintaining</h2>
+            <p>"Deploy applications to the real world, ensuring smooth operation and ongoing maintenance. This involves configuring deployments, monitoring performance, addressing any bugs, and keeping the application up-to-date with the latest technologies."</p>
+            <button onClick={()=> scrollTo("Contact")} >Go</button>
           </motion.div>
         </motion.div>
       

@@ -25,7 +25,7 @@ const itemVariants={
     }
 }
 const Links = ({setOpen}) => {
-  const items = ["Homepage", "Services", "Portfolio", "Contact", "About"];
+  const items = ["Homepage", "Services", "Portfolio", "Contact",];
 
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
