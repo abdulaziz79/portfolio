@@ -25,15 +25,19 @@ const items=[
     },
     {
         id:3,
-        title: "Vanilla js app",
+        title: "Digital Wallet",
         img:image2,
-        desc:" Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ea ipsam nulla minus, molestiae veritatis aliquid assumenda repudiandae sit reprehenderit voluptatem facere omnis, alias impedit quo vel dicta at quis!"
+        desc:" Collaborated on the development of a platform dedicated to delivering up-to-date technology news and insights. The platform aimed to provide users with reliable and timely information on the latest tech trends and developments.",
+        link:"#"
+
     },
     {
         id:4,
-        title: "react commerce",
+        title: "TechNow",
         img:image4,
-        desc:" Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ea ipsam nulla minus, molestiae veritatis aliquid assumenda repudiandae sit reprehenderit voluptatem facere omnis, alias impedit quo vel dicta at quis!"
+        desc:"Collaborated on the development of a platform dedicated to delivering up-to-date technology news and insights. The platform aimed to provide users with reliable and timely information on the latest tech trends and developments.",
+        link:"#"
+
     }
 ]
 
@@ -60,9 +64,10 @@ const Single=({item})=>{
             <motion.div className="textContainer" style={{y:y}}>
                 <h2 >{item.title}</h2>
                 <p>{item.desc} </p>
-                <a href={item.link} onClick={handleClick} target="_blank" rel="noopener noreferrer">
+                {item.link && item.link !=="#" ?(<a href={item.link} onClick={handleClick} target="_blank" rel="noopener noreferrer">
                             <button>See Demo</button>
-                        </a>
+                        </a>) :null}
+                
             </motion.div>
             </div>
             </div>

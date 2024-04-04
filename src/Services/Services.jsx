@@ -5,7 +5,7 @@ import image from "../public/people.webp"
 
 const variants={
   initial:{
-    y:-300,
+    y:100,
     opacity:0
   },
   animate:{
