@@ -13,16 +13,16 @@ const App = () => {
 
   return <div>
     <section id="Homepage">
-<Cursor />
+      <Cursor />
       <Navbar/>
       <Hero />
     </section>
      {/* <section >< Parallax type="services"/></section> */}
     <section id="Services"><Services /></section>
-    <section id="Portfolio">< Parallax type="portfolio"/></section>
+    {/* <section id="Portfolio">< Parallax type="portfolio"/></section> */}
     {/* <section id="Portfolio"> </section> */}
 
-    <Portfolio  />
+    <Portfolio  id="Portfolio" />
     <section id="Contact"><Contact /></section>
     {/* <section id="About">About
     </section> */}

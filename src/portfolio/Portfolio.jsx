@@ -4,27 +4,36 @@ import image1 from "../public/CRAFTVISTA.png"
 import image2 from "../public/dash.png"
 import image3 from "../public/image3.png"
 import image4 from "../public/image4.png"
+import image5 from "../public/hopelink.png"
+
 
 
 import { useScroll, motion , useSpring, useTransform} from "framer-motion"
 
 const items=[
+    
     {
         id:1,
+        title: "hopeLink",
+        img:image5,
+        desc:"Your dedicated platform for connecting communities with essential resources. Built with React.js for an intuitive user experience and Node.js for robust performance, hopelink helps users find housing, request or offer donations, and connect with volunteers. A streamlined solution to support those in need with efficiency and empathy",
+        link:"https://hope-link-lebanon.vercel.app/"
+    },{
+        id:2,
         title: "craftVista",
         img:image1,
         desc:"craftVista: Your one-stop solution for connecting with local service providers. Built with React for a seamless user experience, Material UI for sleek design, and powered by Node.js for reliable performance. Find trusted professionals for all your home service needs effortlessly",
         link:"https://craft-vista.vercel.app/"
     },
     {
-        id:2,
+        id:3,
         title: "Monla-LLC",
         img:image3,
         desc:"A dynamic automotive platform developed by a team of 5. Offering a seamless experience for buying car products and accessing reliable vehicle maintenance services. Built with expertise in React and Node.js to ensure optimal performance and user satisfaction.",
         link:"https://monla-llc.vercel.app/"
     },
     {
-        id:3,
+        id:4,
         title: "Digital Wallet",
         img:image2,
         desc:" Collaborated on the development of a platform dedicated to delivering up-to-date technology news and insights. The platform aimed to provide users with reliable and timely information on the latest tech trends and developments.",
@@ -32,7 +41,7 @@ const items=[
 
     },
     {
-        id:4,
+        id:5,
         title: "TechNow",
         img:image4,
         desc:"Collaborated on the development of a platform dedicated to delivering up-to-date technology news and insights. The platform aimed to provide users with reliable and timely information on the latest tech trends and developments.",
