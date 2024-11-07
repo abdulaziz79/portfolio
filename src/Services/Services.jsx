@@ -30,12 +30,12 @@ const Services = () => {
     }
   })
   return (
-    <motion.div className="services" variants={variants} initial="initial" ref={ref} whileInView="animate">
-        <motion.div className="textContainer" variants={variants} >
+    <motion.div className="services"  ref={ref} whileInView="animate">
+        <motion.div className="textContainer" >
             <p>focus on helping your brand grow <br /> and move forward</p>
             <hr />
         </motion.div>
-        <motion.div className="titleContainer" variants={variants} >
+        <motion.div className="titleContainer" >
           <div className="title">
             <img src={image} alt="" />
             <h1>
@@ -48,7 +48,7 @@ const Services = () => {
             <button>WHAT WE DO</button>
           </div>
         </motion.div>
-        <motion.div className="listContainer" variants={variants} >
+        <motion.div className="listContainer" >
           <motion.div className="box" whileHover={{background:"lightgray" ,color:"black"}}>
             <h2>Crafting User Experiences</h2>
             <p>"Translate ideas into intuitive and visually appealing web applications. This includes designing user flows, building user interfaces, and ensuring a seamless experience across all devices."</p>

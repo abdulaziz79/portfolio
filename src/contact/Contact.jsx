@@ -31,7 +31,7 @@ const Contact = () => {
       };
 
   return (
-    <motion.div className="contact" variants={variants} initial="initial" whileInView="animate">
+    <motion.div className="contact"  whileInView="animate">
       <motion.div className="textContainer" variants={variants}>
         <motion.h1  variants={variants} >Let's work together</motion.h1>
         <motion.div  variants={variants} className="item">
